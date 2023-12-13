@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-dotnet60-basic-v0nt
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-dotnet60-basic-v0nt
+    app.kubernetes.io/part-of: component-annotation-dotnet-component
+  name: devfile-sample-dotnet60-bmvn3
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: devfile-sample-dotnet60-basic-v0nt
+    weight: null
+status: {}

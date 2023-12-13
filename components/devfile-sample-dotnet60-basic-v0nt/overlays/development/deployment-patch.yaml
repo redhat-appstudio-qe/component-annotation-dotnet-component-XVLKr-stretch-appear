@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dotnet60-basic-v0nt
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rs-demos-ajks-tenant/component-annotation-dotnet-component/devfile-sample-dotnet60-basic-v0nt@sha256:5673ed324e7b613772b022d7bfd471273dc10d428e7f2765045575a93734db64
+        name: main
+        resources: {}
+status: {}
